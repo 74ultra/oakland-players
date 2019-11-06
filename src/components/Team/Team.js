@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Team.scss';
 import Controls from '../Controls/Controls.js';
 import PlayerCard from '../PlayerCard/PlayerCard.js';
+import { Header } from 'semantic-ui-react';
 
 const Team = props => {
 
@@ -57,6 +58,9 @@ const Team = props => {
     
     return (
         <div>
+            <div className='heading'>
+                <Header as='h1'>2019 40-man Roster</Header>
+            </div>
             <div>
                 <Controls showPitchers={showPitchers} 
                           showInfielders={showInfielders} 
