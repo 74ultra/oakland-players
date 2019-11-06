@@ -10,7 +10,7 @@ const Team = props => {
     const [displayList, setDisplayList] = useState([]);
 
     const getPlayers = () => {
-        axios.get(`http://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id='133'`)
+        axios.get(`https://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id='133'`)
         .then(res => {
             // console.log(res.data.roster_40.queryResults.row)
             setPlayerList(res.data.roster_40.queryResults.row)

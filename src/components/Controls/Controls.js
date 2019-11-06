@@ -6,11 +6,11 @@ const Controls = props => {
     
     return (
         <div className='ctl-wrapper'>
-            <Button onClick={props.showPitchers} color='green'>Show Pitchers</Button>
-            <Button onClick={props.showInfielders} color='green'>Show Infielders</Button>
-            <Button onClick={props.showOutfielders} color='green'>Show Outfielders</Button>
-            <Button onClick={props.showCatchers} color='green'>Show Catchers</Button>
-            <Button onClick={props.getAllPlayers} color='green'>Show All</Button>
+            <Button onClick={props.showPitchers} color='green' size='medium'>Show Pitchers</Button>
+            <Button onClick={props.showInfielders} color='green' size='medium'>Show Infielders</Button>
+            <Button onClick={props.showOutfielders} color='green' size='medium'>Show Outfielders</Button>
+            <Button onClick={props.showCatchers} color='green' size='medium'>Show Catchers</Button>
+            <Button onClick={props.getAllPlayers} color='green' size='medium'> Show All </Button>
         </div>
     )
 }
