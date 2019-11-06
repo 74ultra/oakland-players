@@ -1,19 +1,32 @@
 import React from 'react';
+import { Route, Link } from 'react-router-dom';
 import './App.scss';
-import aslogo from './img/aslogo.png';
+import MainHeader from './components/MainHeader/MainHeader.js';
 import Team from './components/Team/Team.js';
-import { Header } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
+import asLogosm from './img/aslogo-sm.png';
+
 
 function App() {
   return (
     <div className="App">
-      <div className='main-header'>
-        <img src={aslogo} alt='Athletics logo'></img>
-        <Header as='h1'>2019</Header>
-        <Header as='h2'>Oakland Athletics</Header>
-        
-      </div>
-      <Team />
+      <Menu>
+        <Menu.Item>
+          <img src={asLogosm} alt='small-logo' />
+        </Menu.Item>
+        <Link to='/'>
+          <Menu.Item 
+            name='Home'
+          />
+        </Link>
+        <Link to='/team'>
+          <Menu.Item 
+            name='Team Roster'
+          />
+        </Link>
+      </Menu>
+      <Route exact path='/' component={MainHeader} />
+      <Route exact path='/team' component={Team} />
     </div>
   );
 }
