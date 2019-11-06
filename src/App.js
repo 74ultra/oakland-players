@@ -9,8 +9,9 @@ function App() {
     <div className="App">
       <div className='main-header'>
         <img src={aslogo} alt='Athletics logo'></img>
-        <Header as='h1'>Oakland Athletics</Header>
-        <Header as='h2'>2019 40-man roster</Header>
+        <Header as='h1'>2019</Header>
+        <Header as='h2'>Oakland Athletics</Header>
+        
       </div>
       <Team />
     </div>

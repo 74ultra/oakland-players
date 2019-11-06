@@ -1,15 +1,16 @@
 import React from 'react';
 import './Controls.scss';
+import { Button } from 'semantic-ui-react'
 
 const Controls = props => {
     
     return (
         <div className='ctl-wrapper'>
-            <button onClick={props.showPitchers}>Show Pitchers</button>
-            <button onClick={props.showInfielders}>Show Infielders</button>
-            <button onClick={props.showOutfielders}>Show Outfielders</button>
-            <button onClick={props.showCatchers}>Show Catchers</button>
-            <button onClick={props.getAllPlayers}>Show All</button>
+            <Button onClick={props.showPitchers} color='green'>Show Pitchers</Button>
+            <Button onClick={props.showInfielders} color='green'>Show Infielders</Button>
+            <Button onClick={props.showOutfielders} color='green'>Show Outfielders</Button>
+            <Button onClick={props.showCatchers} color='green'>Show Catchers</Button>
+            <Button onClick={props.getAllPlayers} color='green'>Show All</Button>
         </div>
     )
 }
