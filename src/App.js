@@ -12,7 +12,6 @@ function App() {
         <Header as='h1'>Oakland Athletics</Header>
         <Header as='h2'>2019 40-man roster</Header>
       </div>
-      
       <Team />
     </div>
   );
